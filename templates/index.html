@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Program</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Semantic Kernel Space Program</h1>
+        <div class="grid">
+            <div class="section wide">
+                <h2>Launch Site</h2>
+                <p id="launch-site"></p>
+                <div id="map"></div>
+            </div>
+            <div class="section">
+                <h2>Rocket &amp; Suit</h2>
+                <p><strong>Space Rocket:</strong> <span id="space-rocket"></span></p>
+                <p><strong>Spacesuit:</strong> <span id="spacesuit"></span></p>
+            </div>
+            <div class="section">
+                <h2>Fuel</h2>
+                <p><strong>Fuel Type:</strong> <span id="fuel-type"></span></p>
+                <p><strong>Quantity (kg):</strong> <span id="fuel-quantity"></span></p>
+            </div>
+            <div class="section">
+                <h2>Food Supplies</h2>
+                <p id="food-supplies"></p>
+            </div>
+            <div class="section">
+                <h2>Estimated Cost</h2>
+                <p id="estimated-cost"></p>
+            </div>
+        </div>
+        <button id="launch-button">Launch Rocket</button>
+        <div id="rocket-animation">
+            <div class="rocket"></div>
+            <div class="fire"></div>
+        </div>
+        <div id="status"></div>
+    </div>
+    <div id="crew-transmission-popup" class="popup">
+        <div class="popup-content">
+            <h3>Transmission from the crew</h3>
+            <div id="crew-photo-container">
+                <div id="loading-indicator" class="loading-indicator"></div>
+            </div>
+            <div class="button-container">
+                <button id="view-transmission-button" class="button">View Transmission</button>
+                <button id="close-popup-button" class="button">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
