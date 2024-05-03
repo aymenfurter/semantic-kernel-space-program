@@ -10,8 +10,7 @@ cd space-program-adventure
 pip install -r requirements.txt
 echo "OPENAI_API_KEY=your-api-key" > .env  
 python app.py  
-```  
- get enough of the final frontier? We'd love to see you on board. Fork the repository and send us a pull request. Let's explore the cosmos together!  
-   
+```
+
 ## License  
 This project is licensed under the MIT License.  
