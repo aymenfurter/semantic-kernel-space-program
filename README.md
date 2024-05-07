@@ -6,7 +6,7 @@ Ready to launch? Here's your pre-flight checklist:
    
 ```bash  
 git clone https://github.com/aymenfurter/semantic-kernel-space-program.git
-cd space-program-adventure  
+cd semantic-kernel-space-program 
 pip install -r requirements.txt
 echo "OPENAI_API_KEY=your-api-key" > .env  
 python app.py  
